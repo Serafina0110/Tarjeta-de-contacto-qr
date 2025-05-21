@@ -1,0 +1,71 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto Rápido</title>
+  <style>
+    body {
+      background-color: #f1f1f1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 100%;
+      max-width: 320px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 22px;
+      color: #333;
+    }
+
+    .button {
+      display: block;
+      margin: 12px 0;
+      padding: 12px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+
+    .small {
+      font-size: 13px;
+      color: #777;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>📲 ¿Qué deseas hacer?</h2>
+
+    <a class="button" href="tel:+34123456789">📞 Llamar</a>
+    <a class="button" href="sms:+34123456789?body=Hola,%20quiero%20contactarte">✉️ Enviar SMS</a>
+    <a class="button" href="https://wa.me/34123456789">💬 WhatsApp</a>
+    <a class="button" href="https://tusitio.com/juan.vcf" download>👤 Guardar contacto</a>
+
+    <p class="small">Mon · mon@nostrumseafood.com</p>
+  </div>
+</body>
+</html>
