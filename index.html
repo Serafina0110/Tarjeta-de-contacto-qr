@@ -1,53 +1,50 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tarjeta Digital - Tiendas Lucho</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Contacto rápido</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 40px;
+      background: #f2f2f2;
+    }
+    h1 {
+      margin-bottom: 30px;
+    }
+    a.boton {
+      display: block;
+      width: 80%;
+      max-width: 300px;
+      margin: 15px auto;
+      padding: 15px;
+      font-size: 18px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+    }
+    a.boton:active {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-  <div class="card">
-    <div class="header">
-      <h1>Tiendas Lucho</h1>
-    </div>
-    <img src="https://i.pravatar.cc/300" alt="Avatar" class="avatar" />
-    <div class="section">
-      <p><strong>Venta de artículos electrónicos y gadgets</strong></p>
-      <p>Servicios profesionales en desarrollo web y análisis de datos</p>
-      <div class="buttons">
-        <a href="https://wa.me/59172698986">WhatsApp</a>
-        <a href="mailto:tiendaslucho@gmail.com">Correo</a>
-        <a href="tel:72698986">Llamar</a>
-        <a href="https://facebook.com/tiendaslucho">Facebook</a>
-        <a href="https://www.instagram.com/tiendaslucho">Instagram</a>
-        <a href="https://www.linkedin.com/in/tiendaslucho">LinkedIn</a>
-        <a href="https://www.tiktok.com/@tiendaslucho">TikTok</a>
-        <a href="https://goo.gl/maps/placeholder">Ubicación</a>
-        <a href="https://emercadogarcia.github.io/TarjetaDigital/">Catálogo / Web</a>
-      </div>
-      <div class="tagline">
-        <div>♻️ Ecoamigable</div>
-        <div>🔄 Siempre actualizada</div>
-        <div>📲 Fácil de compartir</div>
-      </div>
-    
-<h2 style="text-align:center;">Contáctanos</h2>
-<form action="mailto:tiendaslucho@gmail.com" method="POST" enctype="text/plain" style="display:flex; flex-direction:column; gap:10px; padding: 1em; max-width: 400px; margin: auto;">
-  <input type="text" name="Nombre" placeholder="Tu nombre" required style="padding:10px; border-radius:6px; border:1px solid #ccc;" />
-  <input type="email" name="Correo" placeholder="Tu correo electrónico" required style="padding:10px; border-radius:6px; border:1px solid #ccc;" />
-  <input type="tel" name="Teléfono" placeholder="Tu número de teléfono" style="padding:10px; border-radius:6px; border:1px solid #ccc;" />
-  <textarea name="Mensaje" placeholder="Tu mensaje o consulta" rows="5" style="padding:10px; border-radius:6px; border:1px solid #ccc;"></textarea>
-  <button type="submit" style="background-color:#004080; color:white; border:none; padding:10px; border-radius:6px; font-size:1em;">Enviar mensaje</button>
-</form>
-</div>
-    <div class="qr">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://emercadogarcia.github.io/TarjetaDigital/&size=150x150" alt="QR Code">
-    </div>
-    <div class="footer">
-      <p>© 2025 Tiendas Lucho · Todos los derechos reservados.</p>
-    </div>
-  </div>
-</body>
-</html>
+
+  <h1>Acciones rápidas</h1>
+
+  <!-- Botón para llamar -->
+  <a href="tel:+34123456789" class="boton">📞 Llamar</a>
+
+  <!-- Botón para enviar SMS -->
+  <a href="sms:+34123456789?body=Hola,%20quiero%20contactarte" class="boton">💬 Enviar SMS</a>
+
+  <!-- Botón para descargar contacto -->
+  <a 
+    href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0AVERSION%3A3.0%0AN%3AContacto%3BPrueba%0AFN%3AContacto%20Prueba%0ATEL%3BTYPE%3DCELL%3A%2B34123456789%0AEND%3AVCARD" 
+    download="contacto.vcf" 
+    class="boton">
+    👤 Agregar a Contactos
+  </a>
